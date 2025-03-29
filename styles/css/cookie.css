@@ -1,0 +1,81 @@
+/* Animation pour l'arrivée de la popup */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation pour la sortie de la popup */
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8) !important;
+  color: #fff !important;
+  text-align: center;
+  padding: 20px;
+  display: none;
+  z-index: 9999; /* Valeur élevée pour être au-dessus des autres éléments */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease-out; /* Animation d'arrivée */
+}
+
+.cookie-consent.hidden {
+  animation: slideOut 0.5s ease-in; /* Animation de sortie */
+}
+
+.cookie-consent-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cookie-text {
+  margin: 0;
+  flex: 1;
+}
+
+.cookie-link {
+  color: #00bcd4 !important; /* Couleur bleu clair */
+  text-decoration: none;
+}
+
+.cookie-link:hover {
+  text-decoration: underline;
+}
+
+.cookie-btn {
+  background-color: #f44336 !important; /* Rouge */
+  color: #fff !important;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 20px; /* Espace entre le texte et le bouton */
+}
+
+.cookie-btn:hover {
+  background-color: #e53935 !important; /* Rouge plus foncé */
+}

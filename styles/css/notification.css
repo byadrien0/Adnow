@@ -1,0 +1,74 @@
+#unique-notifications-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unique-notification_card {
+    margin: 10px;
+    width: 300px; /* Ajustez la largeur selon vos besoins */
+}
+
+.unique-notification {
+    display: none; /* Caché par défaut */
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background-clip: padding-box;
+    box-sizing: border-box;
+}
+
+.unique-notification.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.unique-notification .d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.unique-notification .alert_icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.unique-notification p {
+    margin: 0;
+}
+
+.unique-notification .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.unique-notification.unique-information_attention {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.unique-notification.unique-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.unique-notification.unique-failure {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.unique-notification.unique-verify_email {
+    background-color: #cce5ff;
+    color: #004085;
+}
