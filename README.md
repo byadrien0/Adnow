@@ -1,26 +1,28 @@
-🚀 Présentation du projet
-Le dépôt Adnow contient tous les fichiers nécessaires pour lancer le site adnow.online 🎉. Ce projet a pour objectif de fournir une plateforme de gestion de publicité et de création de contenus publicitaires, alliant technologies modernes et architecture modulable.
+# Bienvenue sur le GITHUB du site **adnow.online**
 
-Note sur la langue : Le site est principalement construit en français 🇫🇷, mais il peut être facilement traduit grâce au plugin de traduction intégré directement dans l'interface du site 🌐.
+Adnow.online est une agence de publicité spécialisée dans les serveurs de jeux. Le site est **open source**, ce qui signifie que tout le monde peut proposer des modifications. Certaines de ces modifications, si elles sont pertinentes et approuvées, peuvent être intégrées au site officiel. Ainsi, vous pouvez développer de nouvelles fonctionnalités, les partager, et peut-être voir votre nom crédité sur le site officiel !
 
-🔧 Configuration initiale
-Pour que le site fonctionne correctement, plusieurs étapes de configuration sont nécessaires :
+## 🌍 Langue
+Le site est principalement construit en **français** 🇫🇷, mais il peut être facilement traduit grâce au plugin de traduction intégré directement dans l'interface du site 🌐.
 
-Authentification OAuth2 🔐
-Configurez OAuth2 pour intégrer en toute sécurité les services suivants :
+---
 
-Google 🌐
+## 🔧 Configuration initiale
 
-Meta 📘
+### 1️⃣ Authentification OAuth2 🔐
 
-Twitch 🎮
+Configurez **OAuth2** pour intégrer en toute sécurité les services suivants :
 
-Discord 💬
+- **Google** 🌐
+- **Meta** 📘
+- **Twitch** 🎮
+- **Discord** 💬
 
-Modifier le fichier de configuration : /auth/auth-form-update.php
-Voici comment configurer les détails pour chaque service :
+Modifiez le fichier de configuration :
 
+📂 **`/auth/auth-form-update.php`**
 
+```php
 // Configuration OAuth2 Discord
 $client_id_discord = 'YOUR_CLIENT_ID';
 $client_secret_discord = 'YOUR_CLIENT_SECRET';
@@ -40,35 +42,53 @@ $redirect_uri_twitch = 'https://VOTRE_URL/auth/auth-form-update.php?selected_pro
 $client_id_meta = 'YOUR_CLIENT_ID';
 $client_secret_meta = 'YOUR_CLIENT_SECRET';
 $redirect_uri_meta = 'https://VOTRE_URL/auth/auth-form-update.php?selected_provider=meta';
-Plugins et Bots 🤖
-Assurez-vous que tous les plugins et bots pointent correctement vers le site pour garantir une interaction fluide entre les différentes parties du système.
+```
 
-Intégration Stripe 💳
-Configurez Stripe via un webhook pour une gestion automatisée et sécurisée des paiements dans votre système. Modifiez les fichiers suivants pour compléter l'intégration.
+### 2️⃣ Plugins et Bots 🤖
 
-Modifier le fichier /dashboard/z-stripe.php :
+Assurez-vous que **tous les plugins et bots** pointent correctement vers le site pour garantir une interaction fluide entre les différentes parties du système.
 
+### 3️⃣ Intégration Stripe 💳
+
+Configurez **Stripe** via un webhook pour une gestion automatisée et sécurisée des paiements.
+
+📂 **Modifier le fichier `/dashboard/z-stripe.php`**
+
+```php
 // Définir la clé API secrète Stripe
 \Stripe\Stripe::setApiKey('YOUR_KEY_API');
 
 // Clé secrète du webhook Stripe
 $endpoint_secret = 'YOUR_WEBHOOK_STRIPE'; // Remplacez par votre secret de webhook Stripe
-Modifier le fichier /dashboard/stripe-checkout.php :
+```
 
+📂 **Modifier le fichier `/dashboard/stripe-checkout.php`**
+
+```php
 \Stripe\Stripe::setApiKey('YOUR_KEY_API');
-🛡️ Sécurité et robustesse du code
-Le site peut actuellement présenter quelques failles de sécurité. Il est donc fortement recommandé de :
+```
 
-Vérifier l’ensemble du code source pour identifier et corriger d’éventuelles vulnérabilités 🔍.
+---
 
-Améliorer la robustesse du système en appliquant les meilleures pratiques de sécurité 🔒.
+## 🛡️ Sécurité et robustesse du code
 
-⚠️ Remarques sur le développement
-À ce stade, des erreurs de pointage ou d’implémentation peuvent être présentes. Cependant, ces erreurs ne compromettent en rien la qualité de la base du projet. Elles sont généralement simples à corriger et permettent d’établir une fondation solide pour les futurs développements :
+Le site peut actuellement présenter quelques **failles de sécurité**. Il est donc fortement recommandé de :
 
-Gestion de la publicité 📊.
+- **Vérifier** l’ensemble du code source pour identifier et corriger d’éventuelles vulnérabilités 🔍.
+- **Améliorer** la robustesse du système en appliquant les meilleures pratiques de sécurité 🔒.
 
-Création de contenus publicitaires créatifs 🎨.
+---
 
-N'hésitez pas à contribuer ou à poser des questions sur le projet via les issues ou en envoyant des pull requests ! 🚀
+## ⚠️ Remarques sur le développement
+
+À ce stade, des erreurs de pointage ou d’implémentation peuvent être présentes. Cependant, ces erreurs **ne compromettent pas** la qualité de la base du projet. Elles sont généralement **simples à corriger** et permettent d’établir une fondation solide pour les futurs développements :
+
+- **Gestion de la publicité** 📊
+- **Création de contenus publicitaires créatifs** 🎨
+
+---
+
+## 🤝 Contribution
+
+N'hésitez pas à **contribuer** ou à **poser des questions** sur le projet via les **issues** ou en envoyant des **pull requests** ! 🚀
 
