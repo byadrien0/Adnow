@@ -97,6 +97,19 @@ $endpoint_secret = 'YOUR_WEBHOOK_STRIPE'; // Replace with your Stripe webhook se
 
 ---
 
+## 🗄️ Database Setup
+
+A **blank database** with all necessary tables is available in the root directory of the project.  
+
+📂 **File:** `adnow.sql`  
+
+To set up the database, simply import this SQL file into your MySQL server:  
+
+```sh
+mysql -u YOUR_USERNAME -p YOUR_DATABASE_NAME < adnow.sql
+
+---
+
 ## 🛡️ Code Security and Robustness
 
 The site may currently have some **security vulnerabilities**. It is therefore highly recommended to:
