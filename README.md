@@ -1,8 +1,8 @@
-# Bienvenue sur le GITHUB du site **adnow.online**
+# Welcome to the GITHUB of **adnow.online**
 
-Adnow.online est une agence de publicité spécialisée dans les serveurs de jeux. Le site est **open source**, ce qui signifie que tout le monde peut proposer des modifications. Certaines de ces modifications, si elles sont pertinentes et approuvées, peuvent être intégrées au site officiel. Ainsi, vous pouvez développer de nouvelles fonctionnalités, les partager, et peut-être voir votre nom crédité sur le site officiel !
+Adnow.online is an advertising agency specializing in game servers. The site is **open source**, which means that anyone can propose modifications. Some of these modifications, if relevant and approved, may be integrated into the official site. This way, you can develop new features, share them, and perhaps see your name credited on the official site!
 
-Site original : https://adnow.online/
+Original site: [https://adnow.online/](https://adnow.online/)
 
 ---
 
@@ -10,86 +10,86 @@ Site original : https://adnow.online/
 
 ---
 
-## 🌍 Langue
-Le site est principalement construit en **français** 🇫🇷, mais il peut être facilement traduit grâce au plugin de traduction intégré directement dans l'interface du site 🌐.
+## 🌍 Language
+The site is primarily built in **French** 🇫🇷, but it can be easily translated thanks to the built-in translation plugin directly integrated into the site's interface 🌐.
 
 ---
 
-## ⚠️ Notice importante
+## ⚠️ Important Notice
 
-Il est **strictement interdit** de :
+It is **strictly forbidden** to:
 
-- Se faire passer pour le **propriétaire**, le **créateur**, ou le **diffuseur** du site.
-- Utiliser le site ou son code source dans le but de **générer un bénéfice personnel**.
+- Impersonate the **owner**, **creator**, or **distributor** of the site.
+- Use the site or its source code for **personal profit**.
 
-Cependant, les **modifications** sont **autorisées et encouragées** dans le but d’**améliorer les fonctionnalités** du site. Chaque fonctionnalité acceptée et ajoutée au site principal sera **créditée à son auteur**.
+However, **modifications** are **allowed and encouraged** to **improve the site's features**. Each accepted and added feature will be **credited to its author**.
 
 ---
 
-## 🔧 Configuration initiale
+## 🔧 Initial Setup
 
-### 1️⃣ Authentification OAuth2 🔐
+### 1️⃣ OAuth2 Authentication 🔐
 
-Configurez **OAuth2** pour intégrer en toute sécurité les services suivants :
+Set up **OAuth2** to securely integrate the following services:
 
 - **Google** 🌐
 - **Meta** 📘
 - **Twitch** 🎮
 - **Discord** 💬
 
-Modifiez le fichier de configuration :
+Modify the configuration file:
 
 📂 **`/auth/auth-form-update.php`**
 
 ```php
-// Configuration OAuth2 Discord
+// OAuth2 Configuration for Discord
 $client_id_discord = 'YOUR_CLIENT_ID';
 $client_secret_discord = 'YOUR_CLIENT_SECRET';
-$redirect_uri_discord = 'https://VOTRE_URL/auth/auth-form-update.php?selected_provider=discord';
+$redirect_uri_discord = 'https://YOUR_URL/auth/auth-form-update.php?selected_provider=discord';
 
-// Configuration OAuth2 Google
+// OAuth2 Configuration for Google
 $client_id_google = 'YOUR_CLIENT_ID';
 $client_secret_google = 'YOUR_CLIENT_SECRET';
-$redirect_uri_google = 'https://VOTRE_URL/auth/auth-form-update.php?selected_provider=google';
+$redirect_uri_google = 'https://YOUR_URL/auth/auth-form-update.php?selected_provider=google';
 
-// Configuration OAuth2 Twitch
+// OAuth2 Configuration for Twitch
 $client_id_twitch = 'YOUR_CLIENT_ID';
 $client_secret_twitch = 'YOUR_CLIENT_SECRET';
-$redirect_uri_twitch = 'https://VOTRE_URL/auth/auth-form-update.php?selected_provider=twitch';
+$redirect_uri_twitch = 'https://YOUR_URL/auth/auth-form-update.php?selected_provider=twitch';
 
-// Configuration OAuth2 Meta
+// OAuth2 Configuration for Meta
 $client_id_meta = 'YOUR_CLIENT_ID';
 $client_secret_meta = 'YOUR_CLIENT_SECRET';
-$redirect_uri_meta = 'https://VOTRE_URL/auth/auth-form-update.php?selected_provider=meta';
+$redirect_uri_meta = 'https://YOUR_URL/auth/auth-form-update.php?selected_provider=meta';
 ```
 
-### 2️⃣ Plugins et Bots 🤖
+### 2️⃣ Plugins and Bots 🤖
 
-Assurez-vous que **tous les plugins et bots** pointent correctement vers le site pour garantir une interaction fluide entre les différentes parties du système.
+Ensure that **all plugins and bots** correctly point to the site to guarantee smooth interaction between the different parts of the system.
 
-Pour le **plugin Minecraft**, vous pouvez télécharger le **code source** via le **GitHub** suivant :
+For the **Minecraft plugin**, you can download the **source code** via the following **GitHub**:
 
-➡️ **[Lien du dépôt GitHub](#)**
+➡️ **[GitHub Repository Link](#)**
 
-Pour le **bot discord**, vous pouvez télécharger le **code source** via le **GitHub** suivant :
+For the **Discord bot**, you can download the **source code** via the following **GitHub**:
 
-➡️ **[Lien du dépôt GitHub](#)**
+➡️ **[GitHub Repository Link](#)**
 
-### 3️⃣ Intégration Stripe 💳
+### 3️⃣ Stripe Integration 💳
 
-Configurez **Stripe** via un webhook pour une gestion automatisée et sécurisée des paiements.
+Set up **Stripe** via a webhook for automated and secure payment management.
 
-📂 **Modifier le fichier `/dashboard/z-stripe.php`**
+📂 **Modify the file `/dashboard/z-stripe.php`**
 
 ```php
-// Définir la clé API secrète Stripe
+// Set Stripe secret API key
 \Stripe\Stripe::setApiKey('YOUR_KEY_API');
 
-// Clé secrète du webhook Stripe
-$endpoint_secret = 'YOUR_WEBHOOK_STRIPE'; // Remplacez par votre secret de webhook Stripe
+// Stripe Webhook Secret Key
+$endpoint_secret = 'YOUR_WEBHOOK_STRIPE'; // Replace with your Stripe webhook secret
 ```
 
-📂 **Modifier le fichier `/dashboard/stripe-checkout.php`**
+📂 **Modify the file `/dashboard/stripe-checkout.php`**
 
 ```php
 \Stripe\Stripe::setApiKey('YOUR_KEY_API');
@@ -97,35 +97,31 @@ $endpoint_secret = 'YOUR_WEBHOOK_STRIPE'; // Remplacez par votre secret de webho
 
 ---
 
-## 🛡️ Sécurité et robustesse du code
+## 🛡️ Code Security and Robustness
 
-Le site peut actuellement présenter quelques **failles de sécurité**. Il est donc fortement recommandé de :
+The site may currently have some **security vulnerabilities**. It is therefore highly recommended to:
 
-- **Vérifier** l’ensemble du code source pour identifier et corriger d’éventuelles vulnérabilités 🔍.
-- **Améliorer** la robustesse du système en appliquant les meilleures pratiques de sécurité 🔒.
-
----
-
-## ⚠️ Remarques sur le développement
-
-À ce stade, des erreurs de pointage ou d’implémentation peuvent être présentes. Cependant, ces erreurs **ne compromettent pas** la qualité de la base du projet. Elles sont généralement **simples à corriger** et permettent d’établir une fondation solide pour les futurs développements :
-
-- **Gestion de la publicité** 📊
-- **Création de contenus publicitaires créatifs** 🎨
+- **Review** the entire source code to identify and fix potential vulnerabilities 🔍.
+- **Enhance** system robustness by applying best security practices 🔒.
 
 ---
 
+## ⚠️ Development Notes
 
+At this stage, there may be some pointing or implementation errors. However, these errors **do not compromise** the overall quality of the project. They are generally **easy to fix** and help establish a solid foundation for future developments:
 
+- **Ad management** 📊
+- **Creation of creative advertisements** 🎨
+
+---
 
 ## 🤝 Contribution
 
-N'hésitez pas à **contribuer** ou à **poser des questions** sur le projet via les **issues** ou en envoyant des **pull requests** ! 🚀
+Feel free to **contribute** or **ask questions** about the project via **issues** or by submitting **pull requests**! 🚀
 
 ---
 
-## Images du projet
-
+## Project Images
 
 ![image](https://github.com/user-attachments/assets/b0f0c615-6052-44cb-baa3-f9806d5b63e8)
 
@@ -150,6 +146,3 @@ N'hésitez pas à **contribuer** ou à **poser des questions** sur le projet via
 ![image](https://github.com/user-attachments/assets/096d3b3f-edec-42bf-9dc5-8c5d19c40535)
 
 ---
-
-
-
