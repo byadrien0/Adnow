@@ -2,7 +2,11 @@
 
 Adnow.online est une agence de publicité spécialisée dans les serveurs de jeux. Le site est **open source**, ce qui signifie que tout le monde peut proposer des modifications. Certaines de ces modifications, si elles sont pertinentes et approuvées, peuvent être intégrées au site officiel. Ainsi, vous pouvez développer de nouvelles fonctionnalités, les partager, et peut-être voir votre nom crédité sur le site officiel !
 
+---
+
 ![image](https://github.com/user-attachments/assets/b0f0c615-6052-44cb-baa3-f9806d5b63e8)
+
+---
 
 ## 🌍 Langue
 Le site est principalement construit en **français** 🇫🇷, mais il peut être facilement traduit grâce au plugin de traduction intégré directement dans l'interface du site 🌐.
