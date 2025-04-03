@@ -48,6 +48,14 @@ $redirect_uri_meta = 'https://VOTRE_URL/auth/auth-form-update.php?selected_provi
 
 Assurez-vous que **tous les plugins et bots** pointent correctement vers le site pour garantir une interaction fluide entre les différentes parties du système.
 
+Pour le **plugin Minecraft**, vous pouvez télécharger le **code source** via le **GitHub** suivant :
+
+➡️ **[Lien du dépôt GitHub](#)**
+
+Pour le **bot discord**, vous pouvez télécharger le **code source** via le **GitHub** suivant :
+
+➡️ **[Lien du dépôt GitHub](#)**
+
 ### 3️⃣ Intégration Stripe 💳
 
 Configurez **Stripe** via un webhook pour une gestion automatisée et sécurisée des paiements.
