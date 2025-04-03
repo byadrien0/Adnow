@@ -103,10 +103,7 @@ A **blank database** with all necessary tables is available in the root director
 
 📂 **File:** `adnow.sql`  
 
-To set up the database, simply import this SQL file into your MySQL server:  
-
-```sh
-mysql -u YOUR_USERNAME -p YOUR_DATABASE_NAME < adnow.sql
+To set up the database, simply import this SQL file into your MySQL server (or in phpmyadmin)
 
 ---
 
