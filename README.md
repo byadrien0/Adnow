@@ -7,6 +7,17 @@ Le site est principalement construit en **français** 🇫🇷, mais il peut êt
 
 ---
 
+## ⚠️ Notice importante
+
+Il est **strictement interdit** de :
+
+- Se faire passer pour le **propriétaire**, le **créateur**, ou le **diffuseur** du site.
+- Utiliser le site ou son code source dans le but de **générer un bénéfice personnel**.
+
+Cependant, les **modifications** sont **autorisées et encouragées** dans le but d’**améliorer les fonctionnalités** du site. Chaque fonctionnalité acceptée et ajoutée au site principal sera **créditée à son auteur**.
+
+---
+
 ## 🔧 Configuration initiale
 
 ### 1️⃣ Authentification OAuth2 🔐
