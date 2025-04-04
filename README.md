@@ -143,6 +143,14 @@ On the **Invoice** page, a **"Pay Invoice"** button will be available. Once clic
 
 ---
 
+## 🤝 Project Participants Credits**  
+
+- **AurelJo** (6-week internship)  
+- **Ay_Max** (6-week internship)  
+- **Original Founder** (**ByAdrien**)
+
+---
+
 ## Project Images
 
 ![image](https://github.com/user-attachments/assets/b0f0c615-6052-44cb-baa3-f9806d5b63e8)
