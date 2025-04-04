@@ -178,3 +178,8 @@ On the **Invoice** page, a **"Pay Invoice"** button will be available. Once clic
 ---
 
 ![image](https://github.com/user-attachments/assets/9f5d784a-1674-47b8-afef-ddc40b8e9b93)
+
+---
+
+![image](https://github.com/user-attachments/assets/0d881e2f-fbe5-4a3c-9b7f-049e01559fb5)
+
