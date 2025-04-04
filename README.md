@@ -143,7 +143,7 @@ On the **Invoice** page, a **"Pay Invoice"** button will be available. Once clic
 
 ---
 
-## 🤝 Project Participants Credits**  
+## 👋 Project Participants Credits  
 
 - **AurelJo** (6-week internship - 2024)
 - **Ay_Max** (6-week internship - 2024)
