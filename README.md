@@ -131,6 +131,18 @@ Feel free to **contribute** or **ask questions** about the project via **issues*
 
 ---
 
+## 🔜 Future Update
+
+All payments will be processed via the **Invoice** tab. This means that when you decide to launch a campaign, you will be able to create it, access its settings and statistics, but it will only become visible after payment.
+
+A **notification banner** will appear on the campaign page stating:  
+*"To activate the campaign, you must pay the invoice."*  
+A **"Click here to pay"** button will redirect users to the **Invoice** tab.
+
+On the **Invoice** page, a **"Pay Invoice"** button will be available. Once clicked, it will trigger the **Stripe payment system**, allowing secure transactions via the **Stripe framework**.
+
+---
+
 ## Project Images
 
 ![image](https://github.com/user-attachments/assets/b0f0c615-6052-44cb-baa3-f9806d5b63e8)
